@@ -11345,16 +11345,6 @@ p {
   }
 }
 
-.custom-map {
-  height: 400px;
-}
-
-pre {
-  border: 2px solid #dee2e6;
-  padding: 15px;
-  border-radius: 0.25rem;
-  background: #f8f9fa;
-}
 
 pre code,
 pre .code {
