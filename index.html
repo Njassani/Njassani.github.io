@@ -1,162 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nadya Sakhiani | Project Manager & Data/Financial Analyst</title>
+/*!
+=========================================================
+* NadyaJassani Landing page
+=========================================================
 
-    <!-- Bootstrap 4.3.x -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+*/
 
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .hero {
-            background: url('banner.jpg') center/cover no-repeat;
-            padding: 120px 20px;
-            text-align: center;
-            color: #fff;
-        }
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-        }
-        .hero p {
-            font-size: 22px;
-            margin-top: 10px;
-        }
-        .section-title {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .card {
-            border-radius: 10px;
-        }
-        .skills-list span {
-            background: #e9ecef;
-            padding: 8px 14px;
-            margin: 6px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 15px;
-        }
-        footer {
-            background: #343a40;
-            color: #fff;
-            padding: 25px;
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
-</head>
 
-<body>
+// Core
+@import "vendors/bootstrap-4.3.1/functions";
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <h1>Nadya Sakhiani</h1>
-    <p>Project Manager • Financial Analyst • Data Intelligence Analyst • CPA & MBA</p>
-</section>
+// custom variables
+@import "abstracts/variables";
+// bootstrap variables
+@import "vendors/bootstrap-4.3.1/variables";
 
-<div class="container mt-5">
+@import "vendors/bootstrap-4.3.1/mixins";
+@import "abstracts/mixins";
 
-    <!-- ABOUT -->
-    <h2 class="section-title">About Me</h2>
-    <p class="lead text-center">
-        I’m a Project Management professional with 5+ years of experience in IT, Business Intelligence, and project delivery —
-        backed by 10+ years in accounting and an active CPA license. I specialize in translating complex business requirements
-        into actionable, data‑driven outcomes that improve efficiency, transparency, and strategic decision‑making.
-    </p>
 
-    <!-- SKILLS -->
-    <h2 class="section-title mt-5">Skills</h2>
-    <div class="skills-list text-center">
-        <span>Power BI</span>
-        <span>SQL</span>
-        <span>Python</span>
-        <span>AWS</span>
-        <span>Financial Modeling</span>
-        <span>Project Planning</span>
-        <span>Data Visualization</span>
-        <span>Communication</span>
-    </div>
+// Bootstrap 4.3.1
+@import "vendors/bootstrap-4.3.1/root";
+@import "vendors/bootstrap-4.3.1/reboot";
+@import "vendors/bootstrap-4.3.1/type";
+@import "vendors/bootstrap-4.3.1/images";
+@import "vendors/bootstrap-4.3.1/code";
+@import "vendors/bootstrap-4.3.1/grid";
+@import "vendors/bootstrap-4.3.1/tables";
+@import "vendors/bootstrap-4.3.1/forms";
+@import "vendors/bootstrap-4.3.1/buttons";
+@import "vendors/bootstrap-4.3.1/transitions";
+@import "vendors/bootstrap-4.3.1/dropdown";
+@import "vendors/bootstrap-4.3.1/button-group";
+@import "vendors/bootstrap-4.3.1/input-group";
+@import "vendors/bootstrap-4.3.1/custom-forms";
+@import "vendors/bootstrap-4.3.1/nav";
+@import "vendors/bootstrap-4.3.1/navbar";
+@import "vendors/bootstrap-4.3.1/card";
+@import "vendors/bootstrap-4.3.1/breadcrumb";
+@import "vendors/bootstrap-4.3.1/pagination";
+@import "vendors/bootstrap-4.3.1/badge";
+@import "vendors/bootstrap-4.3.1/jumbotron";
+@import "vendors/bootstrap-4.3.1/alert";
+@import "vendors/bootstrap-4.3.1/progress";
+@import "vendors/bootstrap-4.3.1/media";
+@import "vendors/bootstrap-4.3.1/list-group";
+@import "vendors/bootstrap-4.3.1/close";
+@import "vendors/bootstrap-4.3.1/toasts";
+@import "vendors/bootstrap-4.3.1/modal";
+@import "vendors/bootstrap-4.3.1/tooltip";
+@import "vendors/bootstrap-4.3.1/popover";
+@import "vendors/bootstrap-4.3.1/carousel";
+@import "vendors/bootstrap-4.3.1/spinners";
+@import "vendors/bootstrap-4.3.1/utilities";
+@import "vendors/bootstrap-4.3.1/print";
 
-    <!-- EXPERIENCE -->
-    <h2 class="section-title mt-5">Professional Experience</h2>
 
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card p-3">
-                <h4>Data Intelligence Analyst</h4>
-                <h6>LKQ Corporation (2023–2026)</h6>
-                <ul>
-                    <li>Built Power BI & Cognos reporting suite reducing manual reconciliation by 30%.</li>
-                    <li>Automated KPI reporting saving 8 hours per cycle.</li>
-                    <li>Created standardized documentation reducing onboarding time by 3 days.</li>
-                </ul>
-            </div>
-        </div>
+// custom 
+@import "base/typography";
 
-        <div class="col-md-6 mb-4">
-            <div class="card p-3">
-                <h4>Business Intelligence Analyst</h4>
-                <h6>DataTenant LLC (2021–2023)</h6>
-                <ul>
-                    <li>Engineered Power BI dashboards improving refresh timeliness.</li>
-                    <li>Built ETL pipelines reducing data discrepancies by 25%.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-            <div class="card p-3">
-                <h4>AWS Cloud Intern</h4>
-                <h6>BelleFleur Tech (2021)</h6>
-                <ul>
-                    <li>Developed ETL processes using Glue, Athena, DataBrew.</li>
-                    <li>Built QuickSight dashboards for finance automation.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-            <div class="card p-3">
-                <h4>Accountant / Controller</h4>
-                <h6>RMS Management (2018–2020)</h6>
-                <ul>
-                    <li>Managed financial operations for 22 properties.</li>
-                    <li>Developed reporting processes for tax and audit readiness.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- CERTIFICATIONS -->
-    <h2 class="section-title mt-5">Certifications</h2>
-    <ul class="list-group">
-        <li class="list-group-item">Certified Public Accountant (CPA) — Tennessee</li>
-        <li class="list-group-item">Microsoft Certified: Power BI Data Analyst Associate</li>
-        <li class="list-group-item">AWS Certified Cloud Practitioner</li>
-        <li class="list-group-item">Generation: AI for Cloud Platform Engineering</li>
-    </ul>
-
-    <!-- CONTACT -->
-    <h2 class="section-title mt-5">Contact</h2>
-    <p class="text-center">
-        📧 Email: <strong>nadya.sakhiani@gmail.com</strong><br>
-        🔗 LinkedIn: <a href="https://linkedin.com/in/nadya-sakhiani" target="_blank">linkedin.com/in/nadya-sakhiani</a><br>
-        💻 GitHub: <a href="https://github.com/Njassani" target="_blank">github.com/Njassani</a>
-    </p>
-
-</div>
-
-<footer>
-    © 2026 Nadya Sakhiani — Project Manager & Data/Financial Analyst
-</footer>
-
-</body>
-</html>
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/card";
+@import "components/code";
+@import "components/dropdowns";
+@import "components/nav";
+@import "components/navbars";
+@import "components/pagination";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sections";
